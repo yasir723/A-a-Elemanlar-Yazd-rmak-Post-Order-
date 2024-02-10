@@ -45,7 +45,7 @@ static void yazdır(tree node)
 3. Null düğüme ulaşana kadar sola gitmeye devam edilir.
 3. En sol düğüme ulaşıldığında, sağa bir defa gidilerek tekrar sol düğümlere gidilir.
 4. Sol düğüm ve sağ düğüm null olana kadar gezinmeye devam edilir.
-5. Sol ve sağ düğümler null ise, `ağacın en derin` düğümüne ulaşılmış olur.
+5. Sol ve sağ düğümler null ise, `sol tarafın en derin` düğümüne ulaşılmış olur.
 6. Ağacın en derin düğümün değeri yazdırılır ve stack'ten çıkılmaya başlanır.
 7. Stack'ten çıktıktan sonra sol-sağ-kök sırasına göre yazdırma işlemi gerçekleştirilir.
 8. Bu işlem, kökün sol tarafı tamamlandıktan sonra kökün sağ tarafına geçilir ve en sonunda kökün değeri yazdırılır.
