@@ -37,4 +37,4 @@ static void yazdır(tree node)
 
 ## Avantaj
 
-- Ağaçtaki elemanlar `küçükten büyüğe` doğru sıralanmış şekilde yazdırmayı sağlar.
+- Ağaçtaki elemanlar `aşağıdan başlayarak yukarıya doğru` şekilde yazdırmayı sağlar.
