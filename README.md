@@ -1,5 +1,5 @@
 # Ağaç Elemanları Yazdırmak (Post-Order)
-`Post-Order gezinme algoritması` kullanarak her bir düğümün değerini önce sol alt ağaç, ardından sağ alt ağaç ve en sonunda kök düğümün değerini yazdırma şeklinde bir sırayla ilerler. Bu yazdırma sonucunda ağaçtaki elemanlar en aşağısından yukarıya doğru yazdırılacaktır.
+`Post-Order gezinme algoritması` kullanarak her bir düğümün değerini önce sol alt ağaç, ardından sağ alt ağaç ve en sonunda kök düğümün değerini yazdırma şeklinde bir sırayla ilerler. Bu yazdırma sonucunda önce ağacın sol tarafındaki düğümleri sonra ağacın sağ tarafındaki düğümleri `en alt düğümden başlayarak yukarıya doğru` şeklinde yazdırılacaktır.
 
 Bu C# sınıfı, binary ağaç veri yapısını oluşturmak için kullanılır
 ## `tree` Sınıfı
@@ -37,4 +37,24 @@ static void yazdır(tree node)
 
 ## Avantaj
 
-- Ağaçtaki elemanlar `aşağıdan başlayarak yukarıya doğru` şekilde yazdırmayı sağlar.
+- Ağaçtaki elemanlar önce ağacın sol tarafındaki düğümleri sonra ağacın sağ tarafındaki düğümleri `en alt düğümden başlayarak yukarıya doğru` şeklinde yazdırmayı sağlar.
+
+## İşleyiş
+1. İlk olarak gönderilen ağaç null ise, null döndürülür.
+2. Null değilse, sola gitmeye başlanır.
+3. Null düğüme ulaşana kadar sola gitmeye devam edilir.
+4. En sol düğüme gittikten sonra bir defa sağ giderek yine sol düğümlere gidilmeye başlanır.
+5. Sol düğüm ve sağ düğüm null olana kadar gezinmeye devam edilir.
+6. Sol düğüm ve sağ düğüm null ise `ağacın en derin` düğümüne ulaşılmış olur.
+7. ağacın en derin düğümün değerini yazdırıp stacktan çıkılmaya başlanır.
+8. stacktan çıktıktan sonra sol-sağ-kök şeklinde yazdırma işlemi yapılır
+9. Bu işlem kökün sol tarafını bitirdikten sonra kökün sağ tarafına geçilir ve en sonunda kökün derğeri yazdırılır.
+10. Kökün sağ tarafına ilk gidildiğinde aynı işlem uygulanır; kökün sağ düğümünün en soluna gidilir ve değer yazdırılır.
+11. Böylece aynı işlem devam edilir.
+
+<div align="center">
+    <h3>Binary Ağaç Elemanları Post-Order Yazdırma Aşamaları</h3>
+</div>
+
+[![Yazdırma Adımları](https://github.com/yasir723/Agac-Elemanlari-Yazdirmak-Pre-Order-/assets/111686779/69b40cce-02df-45f7-8453-da0bc03731d7)](https://github.com/yasir723/Agac-Elemanlari-Yazdirmak-Pre-Order-/assets/111686779/69b40cce-02df-45f7-8453-da0bc03731d7)
+
