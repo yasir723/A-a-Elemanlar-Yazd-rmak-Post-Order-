@@ -21,12 +21,12 @@ class tree
 
 ## `yazdır` Metodu
 ```csharp
-static void yazdir(tree node) 
+static void yazdır(tree node) 
 {
     if (node == null) return;
 
-    yazdir(node.left);
-    yazdir(node.right);
+    yazdır(node.left);
+    yazdır(node.right);
     Console.WriteLine(node.value);
 }
 ```
