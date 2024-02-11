@@ -54,5 +54,5 @@ static void yazdır(tree node)
     <h3>Binary Ağaç Elemanları Post-Order Yazdırma Aşamaları</h3>
 </div>
 
-[![Yazdırma Adımları](https://github.com/yasir723/Agac-Elemanlari-Yazdirmak-Pre-Order-/assets/111686779/69b40cce-02df-45f7-8453-da0bc03731d7)](https://github.com/yasir723/Agac-Elemanlari-Yazdirmak-Pre-Order-/assets/111686779/69b40cce-02df-45f7-8453-da0bc03731d7)
+[![Yazdırma Adımları](https://github.com/yasir723/Agac-Elemanlari-Yazdirmak-Pre-Order/assets/111686779/ed089501-70c3-43ba-aa24-a0bf23306975)](https://github.com/yasir723/Agac-Elemanlari-Yazdirmak-Pre-Order/assets/111686779/ed089501-70c3-43ba-aa24-a0bf23306975)
 
